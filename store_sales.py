@@ -140,6 +140,7 @@ test['sales'] = model.predict(X_test)
 test['sales'] = test['sales'].clip(lower=0)
 
 submission = test[['id', 'sales']]
+
 submission.to_csv(r'C:\Users\alata\Desktop\store-sales-time-series-forecasting\submission.csv', index=False)
 
 print("İşlem tamam! 'submission.csv' başarıyla oluşturuldu.")
